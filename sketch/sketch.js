@@ -26,6 +26,8 @@ function roof(x, y) {
 
 function house(x, y) {
   square(5, 30, 70)//defines the perameters of the rectangle
+  square(80, 30, 70)
+  square(155, 30, 70)
 }
 function house(x, y, height, width) {
   rect(5, 30, 70, 70)//defines the perameters of the rectangle

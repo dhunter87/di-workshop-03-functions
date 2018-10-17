@@ -130,9 +130,9 @@ function house(x, y) {
 **What are three reasons you might choose to move to some code into a
 function?**
 
-1. ...
-2. ...
-3. ...
+1. to break down a problem into smaller actions
+2. to avoid re-writing similar code over and over - funtions can be made to perform specific actions, which then can be called by multiple different funtions
+3. decreases the ammount of mistakes and makes debugging easier
 
 # Part 3
 
@@ -187,9 +187,9 @@ function calculateTaxAmount(income, taxRate) {
 
 **What might each section mean?**
 
-- `function`: ...
-- `calculateTaxAmount`: ...
-- `income, taxRate`: ...
+- `function`: tells the computer it is about to perform an action.
+- `calculateTaxAmount`: is an identifier e.g. theels the computer what action it is going to perform
+- `income, taxRate`: the information or data that the function requires to opoerate. e.g. the function requires the users income and the current tax rate in order to perfor the calculation.
 
 All together, that line is describes most of the function’s **signature**. The
 signature is the **name** of the function, its **inputs**, and its **outputs**.
