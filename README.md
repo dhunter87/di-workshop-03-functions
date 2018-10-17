@@ -100,7 +100,7 @@ Replace `rect(5, 30, 70, 70)` with `square(5, 30, 70)` and run your code.
 
 **Add a comment above your function saying what the inputs and outputs of your
 function are (name, description, data type) and what your functions does.** You
-should add a comment like this to every function you write.
+should add a comment like this to every function you write. - DONE
 
 Let’s create some more functions - one for drawing the roof of the house, and
 another for drawing the entire house.
@@ -120,9 +120,9 @@ function house(x, y) {
 
 ## Tasks
 
-1. Change `draw` to use the new `house` function.
+1. Change `draw` to use the new `house` function. - DONE
 2. Change `draw` to show a `hous at the position of the mouse pointer.
-3. Change `draw` to show a row of three houses.
+3. Change `draw` to show a row of three houses. - DONE
 4. Change your `house` function so it needs `width` and `height` as well as `x`
    any `y`
 5. Update `draw` so your row of three houses each has a different size.
