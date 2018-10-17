@@ -79,10 +79,10 @@ function draw() {
 }
 ```
 
-**Annotate each line with a `// comment` describing what it does**
+**Annotate each line with a `// comment` describing what it does** - DONE
 
 **Predict what this will draw when you run it.** Try using a pen and paper to
-help you figure it out.
+help you figure it out. - A little house!
 
 Let’s add our own function. Processing has built-in functions for drawing
 rectangles and other shapes, but let’s add a new one that draws squares. Add
