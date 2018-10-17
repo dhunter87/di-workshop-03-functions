@@ -96,7 +96,7 @@ function square(x, y, size) {
 
 Replace `rect(5, 30, 70, 70)` with `square(5, 30, 70)` and run your code.
 
-**What’s going on here? What might `x, y, size` mean?**
+**What’s going on here? What might `x, y, size` mean?** x is the distance from the x axis and y is distance from the y axis, size is the length of the sides of the square. for square it only needs one integer passed in as all sides are the same size, a rectangle takes two as its sides are two different lengths.
 
 **Add a comment above your function saying what the inputs and outputs of your
 function are (name, description, data type) and what your functions does.** You
