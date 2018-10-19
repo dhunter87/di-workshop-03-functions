@@ -121,7 +121,7 @@ function house(x, y) {
 ## Tasks
 
 1. Change `draw` to use the new `house` function. - DONE
-2. Change `draw` to show a `hous at the position of the mouse pointer.
+2. Change `draw` to show a `hous at the position of the mouse pointer.  - DONE
 3. Change `draw` to show a row of three houses. - DONE
 4. Change your `house` function so it needs `width` and `height` as well as `x`
    any `y`
