@@ -8,7 +8,7 @@ background(255)
 house(5, 50, 70, 70)
 house(85, 50, 80, 90)
 house(180, 50, 40, 30)
-  house(mouseX, mouseY, 180, 200)
+  house(mouseX, mouseY, 180, 100)
 }
 //x is an interger type and represents distance(in pixles) from the x axis
 //y is an interger type and represents distance(in pixles) from the y axis
@@ -22,7 +22,7 @@ function square(x, y, size) {
 function roof(x, y, width) {
   fill(255, 130, 0)//sets the colour of the drawings
   stroke(0)//sets the outline colour of the drawings
-  triangle(x, y, x + (width / 2 + 5), y - 30, x + (width + 10), y)//defines the perameters of the triangle
+  triangle(x, y, x + (width / 2 + 5), y - (width / 2), x + (width + 10), y)//defines the perameters of the triangle
 
 }
 
