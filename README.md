@@ -226,10 +226,13 @@ function setup() {
 ```
 
 ### Expected Output
+9
 
 ### Actual Output
+9
 
 ### Different? Why?
+no
 
 ## Program 2
 
@@ -241,10 +244,13 @@ function setup() {
 ```
 
 ### Expected Output
+12
 
 ### Actual Output
+12
 
 ### Different? Why?
+no
 
 ## Program 3
 
@@ -259,10 +265,13 @@ function setup() {
 ```
 
 ### Expected Output
+3
 
 ### Actual Output
+3
 
 ### Different? Why?
+no
 
 ## Program 4
 
@@ -277,10 +286,13 @@ function setup() {
 ```
 
 ### Expected Output
+10
 
 ### Actual Output
+10
 
 ### Different? Why?
+no
 
 ## Program 5
 
@@ -295,13 +307,16 @@ function setup() {
 ```
 
 ### Expected Output
+'Boop is good'
 
 ### Actual Output
+'Boop is good'
 
 ### Different? Why?
+no
 
 **What does return mean in JavaScript?**
-
+it is what the fuction "gives back". for example the answer to an equasion that the function has just computed.
 # Part 5
 
 Create a new sketch using this code:
@@ -334,7 +349,9 @@ this difficult, sketch it out on a piece of paper and trace through the code
 step by step, as if you were the computer.
 
 **Run the code and see what happens. Was your prediction accurate? If not,
-why?**
+why?** 
+
+I thought it would have made a box with a ball moving side to side bouncing off the walls. i missed the createCanvas function was not called properly. once i fixed this problem i was correct.
 
 Replace the section that causes the ball to bounce with this:
 
