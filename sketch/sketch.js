@@ -22,7 +22,7 @@ function ballShouldBounce(x, y, mouseY)
   else if (y < 0 || y > 300) {
     ySpeed = ySpeed * -1    
   }
-  else if (x <= 20 && y >= mouseY && y <= mouseY + 50){
+  if (x <= 20 && y >= mouseY && y <= mouseY + 50){
     xSpeed *= -1
     score += 1
     if(score > 0 && score % 2 == 1){
@@ -54,6 +54,7 @@ function draw() {
       return;
     case "gameOver":
       text("Game Over", 90, 100)
+      text("score : " + score, 100, 120)
       textSize(20)
   }
 }
