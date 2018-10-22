@@ -1,48 +1,61 @@
 var x = 100
 var y = 150
-var xSpeed = 2
-var ySpeed = 2
+var speed = 2
+var xSpeed = speed
+var ySpeed = speed
+var gameState = "game"
+var score = 0
 
 function setup() {
   createCanvas(300, 300)
 }
-function hitPaddle(x,y, mouseY)
-{
-  if (x == 10 && y > mouseY && y < mouseY + 50)
-  {
+function increaseSpeed(x){
+  speed = speed + x
+  xSpeed = speed
+}
+function ballShouldBounce(x, y, mouseY)
+{ 
+  if (x > 300) {
+    xSpeed = xSpeed * -1
     return true
   }
-  else
-  {
-    return false
-  }
-
-}
-function ballShouldBounce(x, y)
-{
-  if (x < 0 || x > 300) {
-    xSpeed = xSpeed * -1
-  } 
   else if (y < 0 || y > 300) {
     ySpeed = ySpeed * -1    
   }
-
+  else if (x <= 20 && y >= mouseY && y <= mouseY + 50){
+    xSpeed *= -1
+    score += 1
+    if(score > 0 && score % 2 == 1){
+      console.log("increase speed")
+      increaseSpeed(1)
+    }
+  }
+  else if(x < 0){
+    gameState = "gameOver";
+  }
 }
 function draw() {
-  background(0)
+  background(100)
+  switch(gameState){
+    case "game":
 
-  x = x + xSpeed
-  y = y + ySpeed
-  if (hitPaddle == true){
-    ballShouldBounce(x,y)
+      x = x + xSpeed
+      y = y + ySpeed
+    
+      if (ballShouldBounce(x, y, mouseY)) {
+    
+      }
+      rect(10,mouseY, 10, 50)
+      ellipse(x, y, 10, 10)
+      text("Score : " + score, 230, 290)
+      
+      console.log(speed)
+
+      return;
+    case "gameOver":
+      text("Game Over", 90, 100)
+      textSize(20)
   }
-
-  if (ballShouldBounce(x, y)) {
-
-  }
-  rect(10,mouseY, 10, 50)
-  ellipse(x, y, 10, 10)
-  console.log(x,y)
 }
 
 
