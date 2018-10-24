@@ -34,7 +34,7 @@ function ballShouldBounce(x, y, mouseY)
     gameState = "gameOver";
   }
 }
-function draw() {
+function game() {
   background(100)
   switch(gameState){
     case "game":
@@ -57,6 +57,9 @@ function draw() {
       text("score : " + score, 100, 120)
       textSize(20)
   }
+}
+function draw() {
+  game()
 }
 
 

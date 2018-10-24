@@ -123,9 +123,8 @@ function house(x, y) {
 1. Change `draw` to use the new `house` function. - DONE
 2. Change `draw` to show a `hous at the position of the mouse pointer.  - DONE
 3. Change `draw` to show a row of three houses. - DONE
-4. Change your `house` function so it needs `width` and `height` as well as `x`
-   any `y`
-5. Update `draw` so your row of three houses each has a different size.
+4. Change your `house` function so it needs `width` and `height` as well as `x`and `y` - DONE
+5. Update `draw` so your row of three houses each has a different size. - DONE
 
 **What are three reasons you might choose to move to some code into a
 function?**
@@ -361,9 +360,9 @@ if (ballShouldBounce(ballPosition)) {
 }
 ```
 
-- Implement the `ballShouldBounce` function.
+- Implement the `ballShouldBounce` function. - DONE
 - Move the entire bounce `if` statement into a new function.
-- Make the ball move vertically as well as horizontally
+- Make the ball move vertically as well as horizontally - DONE
 - Refactor your code by adding functions until `draw` only uses functions you've
-  written, not ones from processing
-- Turn your sketch into a small game
+  written, not ones from processing - DONE 
+- Turn your sketch into a small game - DONE
